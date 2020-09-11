@@ -37,16 +37,28 @@ body {
   display: flex;
   text-decoration: none;
   color: #ffffff;
-  margin: 0 0 0 10px;
+  margin-left: 2em;
+}
+
+@media (max-width: 768px) {
+  .main-header .logo {
+    margin: 0;
+  }
 }
 
 .main-header .logo > img {
-  width: 70px;
+  width: 7%;
 }
 
 @media (max-width: 768px) {
   .main-header .logo > img {
-    width: 60px;
+    width: 15%;
+  }
+}
+
+@media (max-width: 360px) {
+  .main-header .logo > img {
+    width: 25%;
   }
 }
 
