@@ -33,7 +33,7 @@ body {
 }
 
 .main-header .logo {
-  width: 100%;
+  width: 360px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
