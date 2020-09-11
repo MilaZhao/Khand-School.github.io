@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url(master.css);
+@import url(reset.css);
 /*** 內容開始 ***/
 .white-bg {
   background: #ffffff;
@@ -193,7 +194,8 @@
 
 .course-item .course-card .buy-btn {
   width: 100%;
-  height: 3.5625rem;
+  height: 5vh;
+  line-height: 5vh;
   text-align: center;
   background-color: #e53244;
 }
@@ -205,9 +207,9 @@
 
 .course-item .course-card .course-title {
   width: 100%;
-  height: 3.5625rem;
+  height: 4vh;
+  line-height: 4vh;
   text-align: center;
-  line-height: 1rem;
   margin: 0;
   background-color: #e53244;
 }
@@ -221,10 +223,12 @@
   text-align: center;
   font-size: 1.25rem;
   font-weight: 700;
+  line-height: 4vh;
 }
 
 @media (max-width: 1024px) {
   .course-item .course-card .course-price > p {
+    line-height: 3vh;
     font-size: 1rem;
   }
 }
@@ -243,5 +247,43 @@
   .course-item .course-card > img {
     width: 100%;
   }
+}
+
+/* 按鈕設定 */
+.submit-buttom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.submit-buttom .return-button {
+  margin: 0 20px 0 0;
+}
+
+button[type="submit"] {
+  cursor: pointer;
+  width: 100px;
+  border: none;
+  background: #e53244;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 0.5rem;
+}
+
+button[type="submit"]:hover {
+  background: #b42735;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:active {
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 /*# sourceMappingURL=index.css.map */

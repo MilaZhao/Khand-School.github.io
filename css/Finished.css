@@ -92,6 +92,11 @@
   width: 100px;
 }
 
+.finished-info-top h3 {
+  font-size: 1.625rem;
+  margin-top: 1em;
+}
+
 .fin-ul {
   list-style-type: none;
   margin: 0 auto;
