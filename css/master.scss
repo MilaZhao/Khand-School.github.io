@@ -17,13 +17,14 @@ body {
   .header-container {
     width: 100%;
     max-width: 1200px;
-    display: flex;
+    // display: flex;
+    display: inline-flex;
     align-items: center;
     padding: 1em;
   }
   /* LOGO */
   .logo {
-    width: 500px;
+    width: 100%;
     display: flex;
     text-decoration: none;
     color: #ffffff;
@@ -42,7 +43,7 @@ body {
     }
     h1,
     p {
-      width:100%;
+      // width:100%;
       display: flex;
       flex-direction: column;
       // align-items: center;
@@ -72,7 +73,7 @@ body {
       }
     }
     @media (max-width: 768px) {
-      width: 100%;
+      // width: 100%;
       display: flex;
       justify-content: center;
     }

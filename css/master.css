@@ -23,9 +23,9 @@ body {
 .main-header .header-container {
   width: 100%;
   max-width: 1200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -33,7 +33,7 @@ body {
 }
 
 .main-header .logo {
-  width: 500px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,7 +66,6 @@ body {
 
 .main-header .logo h1,
 .main-header .logo p {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,7 +113,6 @@ body {
 
 @media (max-width: 768px) {
   .main-header .logo {
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
