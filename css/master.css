@@ -33,11 +33,12 @@ body {
 }
 
 .main-header .logo {
-  width: 360px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   text-decoration: none;
+  float: left;
   color: #ffffff;
   margin-left: 2em;
 }
