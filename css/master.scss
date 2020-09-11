@@ -1,0 +1,138 @@
+/*********基本樣式設定**********/
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #e8e8e8;
+  font-family: "Noto Sans TC", sans-serif;
+}
+/*** header 網頁頭 ***/
+.main-header {
+  width: 100%;
+    background-color: #e53244;
+  .header-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+  }
+  /* LOGO */
+  .logo {
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 0 0 10px;
+    > img {
+      width: 70px;
+      @media (max-width: 768px) {
+        width: 60px;
+      }
+    }
+    h1,
+    p {
+      width:100%;
+      display: flex;
+      flex-direction: column;
+      // align-items: center;
+      margin: 0;
+      @media (max-width: 768px) {
+        width:120%;
+      }
+    }
+    h1{
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 0.15rem;
+      padding-left: .5em;
+      @media (max-width: 768px) {
+        font-size: 1rem;
+        padding-left: 0.5em;
+      }
+    }
+    p{
+      font-size: 0.75rem;
+      padding-left: 1.2em;
+      letter-spacing: 0.31rem;
+      @media (max-width: 768px) {
+        padding-left: 1em;
+        letter-spacing: 0.09rem;
+      }
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+/*** Breadcrumbs 麵包屑 ***/
+.wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+
+  .course-nav {
+    margin: 1em auto;
+    display: flex;
+    list-style: none;
+    @media (max-width: 768px) {
+      margin: 2rem auto;
+      padding: 0;
+    }
+    @media (max-width: 360px) {
+      padding: 0px;
+    }
+  }
+}
+.step1,
+.step2,
+.step3 {
+  display: flex;
+  padding: 20px 50px;
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+}
+.course-nav li {
+  display: inline-block;
+  color: #808080;
+  font-size: 1rem;
+  font-weight: 500;
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+  @media (max-width: 360px) {
+    font-size: 0.75rem;
+  }
+}
+.course-nav li .step {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  background: #808080;
+  color: #ffffff;
+  text-align: center;
+  line-height: 24px;
+  display: inline-block;
+  margin-right: 8px;
+}
+/*** 標籤條 基本設定 ***/
+.cart-tab-title {
+  border-bottom: 2px solid #e53244;
+  .tab {
+    border-radius: 5px 5px 0 0;
+    background-color: #e53244;
+    border-bottom: 1px solid #e53244;
+    color: #ffffff;
+    font-weight: 500;
+    display: inline-block;
+    margin: 0;
+    padding: 5px 12px;
+    line-height: 1.3;
+  }
+}

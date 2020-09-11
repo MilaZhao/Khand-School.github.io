@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星媒體創業學院</title>
+    <link rel="stylesheet" href="./css/Checkout.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="./index.html" class="logo">
+                <img src="./img/星媒體logo-gray.svg" alt="千手星媒體創業院">
+                <div class="logo-title">
+                    <h1>千手星媒體創業院</h1>
+                    <p>Startup & New Media</p>
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <main class="wrap">
+        <!-- Breadcrumbs -->
+        <ul class="course-nav">
+            <li class="step1">
+                <span class="step">1</span>
+                <span>課程購買</span>
+            </li>
+            <li class="arrow-l"></li>
+            <li class="step2">
+                <span class="step">2</span>
+                <span>課程結帳</span>
+            </li>
+            <li class="arrow-r"></li>
+            <li class="step3">
+                <span class="step">3</span>
+                <span>付款資訊</span>
+            </li>
+        </ul>
+        <!-- 內容開始 -->
+        <div class="cart-form-div">
+            <div class="cart-info-top white-bg">
+                <!-- 購物車明細 -->
+                <div class="cart-item-right p-bg">
+                    <!-- 購物車 標籤 -->
+                    <div class="cart-tab-title">
+                        <span class="tab">購物車明細</span>
+                    </div>
+                    <div class="cart-item-list">
+                        <div class="cover">
+                            <img src="./img/2020-08-21-12-33-26_1000_12604.jpg" alt="">
+                        </div>
+                        <div class="title">
+                            <p class="name">全修班</p>
+                        </div>
+                        <div class="status text-center"></div>
+                        <div class="price text-center">
+                            <p> NT$32000</p>
+                        </div>
+                        <div class="remove">
+                            <button class="btn track">
+                                <img src="./img/bin.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <!-- 總金額 -->
+                    <div class="price-info">
+                        <p class="text-right">商品數量
+                            <span class="cart-count">1件</span>商品總額
+                            <span class="cart-total">NT$32000</span>
+                        <p class="total">結帳金額
+                            <span class="cart-sum">NT$32000</span>
+                        </p>
+                        </p>
+                    </div>
+                </div>
+                <!-- 選擇付款方式-->
+                <div class="cart-item-left p-bg">
+                    <!-- 選擇付款方式 標籤-->
+                    <div class="cart-tab-title">
+                        <span class="tab">付款方式</span>
+                    </div>
+                    <!-- 選擇付款方式 -->
+                    <ul class="pay-type-list">
+                        <il class="track">
+                            <input type="radio" name="pay-type" id="pay-type-card" value="card">
+                            <label class="radio-inline" for="pay-type-card">線上刷卡</label>
+                        </il>
+                        <il class="track">
+                            <input type="radio" name="pay-type" id="pay-type-atm" value="atm">
+                            <label class="radio-inline" for="pay-type-atm">ATM轉帳</label>
+                        </il>
+                        <il class="track">
+                            <input type="radio" name="pay-type" id="pay-type-cvs" value="cvs">
+                            <label class="radio-inline" for="pay-type-cvs">虛擬付款</label>
+                        </il>
+                    </ul>
+                    <p class="remark-info">※若您購買課程，代表您已同意</p>
+                </div>
+            </div>
+
+            <!-- 購買人資訊-->
+            <div class="cart-item-bottom p-bg">
+                <div class="cart">
+                    <!-- 請填寫購買明細 標籤-->
+                    <div class="cart-tab-title">
+                        <span class="tab">購買人資料</span>
+                    </div>
+                    <form class="form-horizontal checkout-step1-form" id="order_form">
+                        <!-- 填姓名-->
+                        <div class="form-group inline-form-group">
+                            <label class="control-label">
+                                <span class="required">*</span>
+                                姓名
+                            </label>
+                            <div class="inline-group">
+                                <label for="name"></label>
+                                <input type="text" id="name" class="form-control" placeholder="請輸入真實姓名" required>
+                                <label class="control-label error-msg">此為必選</label>
+                            </div>
+                        </div>
+                        <!-- 填手機-->
+                        <div class="form-group inline-form-group pull-right">
+                            <label class="control-label">
+                                <span class="required">*</span>
+                                手機
+                            </label>
+                            <div class="inline-group">
+                                <input type="tel" name="telNo" id="telNo" class="form-control" placeholder="請輸入聯絡電話">
+                                <label class="control-label error-msg">此為必選</label>
+                            </div>
+                        </div>
+                        <!-- 填Email-->
+                        <div class="form-group inline-form-group pull-right">
+                            <label class="control-label">
+                                <span class="required">*</span>
+                                Email
+                            </label>
+                            <div class="inline-group">
+                                <input type="email" id="mail" class="form-control" pattern=".+@beststartupever.com"
+                                    placeholder="請輸入Email" required>
+                                <label class="control-label error-msg">此為必選</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="submit-buttom">
+                <button type="submit" class="return-button" data-submit="...Sending"
+                    onclick="javascript:location.href='./Shopping.html'" value="回到課程購買">返回</button>
+                <button type="submit" class="confirm-button" data-submit="...Sending"
+                    onclick="javascript:location.href='./Finished.html'" value="確認結帳">確認結帳</button>
+            </div>
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>

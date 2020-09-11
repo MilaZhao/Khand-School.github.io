@@ -1,0 +1,357 @@
+@charset "UTF-8";
+@import url(master.css);
+/*** 內容開始 ***/
+.white-bg {
+  background: #ffffff;
+}
+
+.p-bg {
+  padding: 1em;
+}
+
+/* Breadcrumbs 箭頭 */
+.arrow-r {
+  background-image: url("../img/down-arrow-red.svg");
+}
+
+.arrow-l {
+  background-image: url("../img/down-arrow-gray.svg");
+}
+
+.arrow-l,
+.arrow-r {
+  width: 50px;
+  height: 40px;
+  margin: 10px 10px;
+  background-color: transparent;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .arrow-l,
+  .arrow-r {
+    width: 30px;
+    height: 20px;
+    margin: 3px 2px;
+  }
+}
+
+.course-nav .step2 {
+  color: #e53244;
+}
+
+.course-nav .step2 .step {
+  background-color: #e53244;
+  color: #ffffff;
+}
+
+.cart-form-div {
+  width: 100%;
+  max-width: 1140px;
+  margin: auto;
+  padding-top: 15px;
+  padding-right: 16px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+}
+
+/* 標籤條 基本設定 */
+.cart-tab-title {
+  border-bottom: 2px solid #e53244;
+}
+
+.cart-tab-title .tab {
+  border-radius: 5px 5px 0 0;
+  background-color: #e53244;
+  border-bottom: 1px solid #e53244;
+  color: #ffffff;
+  font-weight: 500;
+  display: inline-block;
+  margin: 0;
+  padding: 5px 12px;
+  line-height: 1.3;
+}
+
+.cart-info-top {
+  width: 100%;
+  margin: 0 2em 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .cart-info-top {
+    display: block;
+  }
+}
+
+/* 購物車明細 標籤 */
+.cart-item-right {
+  width: 60%;
+}
+
+@media (max-width: 768px) {
+  .cart-item-right {
+    width: 100%;
+  }
+}
+
+.cart-item-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  padding: 0.9375rem;
+  border-bottom: 1px solid #cccccc;
+}
+
+@media (max-width: 360px) {
+  .cart-item-list {
+    position: relative;
+  }
+}
+
+.cart-item-list .cover {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  padding-right: 16px;
+}
+
+.cart-item-list .cover > img {
+  width: auto;
+  height: 12vh;
+}
+
+@media (max-width: 360px) {
+  .cart-item-list .cover > img {
+    height: 10vh;
+  }
+}
+
+.price > p {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  padding: 0 20px;
+}
+
+@media (max-width: 360px) {
+  .price > p {
+    font-size: 0.875rem;
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    padding: 0 25px;
+  }
+}
+
+.title {
+  width: 14vw;
+  height: 8vh;
+  /* line-height: 07em; */
+}
+
+@media (max-width: 1024px) {
+  .title {
+    width: 20vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    width: 45vw;
+  }
+}
+
+.status {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 3em;
+  line-height: 22px;
+}
+
+@media (max-width: 1024px) {
+  .status {
+    width: 0.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .status {
+    width: 0.2em;
+  }
+}
+
+@media (max-width: 360px) {
+  .status {
+    width: 0;
+  }
+}
+
+/* 刪除btn */
+.remove {
+  margin-top: 1em;
+}
+
+@media (max-width: 768px) {
+  .remove {
+    margin-left: 3.7em;
+  }
+}
+
+@media (max-width: 360px) {
+  .remove {
+    margin-left: 0;
+    margin-top: 3.7em;
+  }
+}
+
+.remove .btn {
+  width: 20px;
+  border-style: none;
+  background-color: #ffffff;
+  padding: 0;
+}
+
+/* 選擇付款方式 */
+.cart-item-left {
+  width: 30%;
+  margin: 0 0 0 5rem;
+}
+
+@media (max-width: 768px) {
+  .cart-item-left {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.cart-item-left .pay-type-list {
+  margin: 0.9375rem 0;
+  padding: 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+.cart-item-left .pay-type-list .track {
+  display: block;
+  width: 100%;
+  height: 2.5em;
+}
+
+.cart-item-left .remark-info {
+  font-size: 0.75rem;
+}
+
+/* 結帳總金額 */
+.price-info {
+  text-align: right;
+  line-height: normal;
+  font-size: 0.75rem;
+}
+
+.price-info span {
+  font-size: 1rem;
+  color: #e53244;
+  font-weight: 500;
+  padding: 0.5em;
+}
+
+.price-info .total {
+  font-size: 1rem;
+  font-weight: 00;
+  margin: 0;
+}
+
+.price-info .cart-sum {
+  font-size: 1.125rem;
+  font-weight: 900;
+  color: #e53244;
+}
+
+/* 購買人資料 */
+.cart-item-bottom {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.cart-item-bottom .cart {
+  width: 59%;
+}
+
+@media (max-width: 768px) {
+  .cart-item-bottom .cart {
+    width: 100%;
+  }
+}
+
+.form-horizontal {
+  margin: 0.9375rem 0.9375rem;
+}
+
+.form-group {
+  margin: 0.9375rem 0;
+}
+
+.form-group .error-msg {
+  display: none;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+}
+
+.submit-buttom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 1em;
+}
+
+.submit-buttom .return-button {
+  margin: 0 20px 0 0;
+}
+
+button[type="submit"] {
+  cursor: pointer;
+  width: 100px;
+  border: none;
+  background: #e53244;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 0.5rem;
+}
+
+button[type="submit"]:hover {
+  background: #b42735;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:active {
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+/*# sourceMappingURL=Checkout.css.map */
