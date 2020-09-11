@@ -23,7 +23,7 @@ body {
   }
   /* LOGO */
   .logo {
-    width: 100%;
+    width: 500px;
     display: flex;
     text-decoration: none;
     color: #ffffff;
@@ -32,12 +32,12 @@ body {
       margin: 0;
     }
     > img {
-      width: 7%;
+      width: 70px;
       @media (max-width: 768px) {
-        width: 15%;
+        width: 60px;
       }
       @media (max-width: 360px) {
-        width: 25%;
+        width: 50px;
       }
     }
     h1,

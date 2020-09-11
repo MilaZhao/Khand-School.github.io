@@ -33,7 +33,7 @@ body {
 }
 
 .main-header .logo {
-  width: 100%;
+  width: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,18 +49,18 @@ body {
 }
 
 .main-header .logo > img {
-  width: 7%;
+  width: 70px;
 }
 
 @media (max-width: 768px) {
   .main-header .logo > img {
-    width: 15%;
+    width: 60px;
   }
 }
 
 @media (max-width: 360px) {
   .main-header .logo > img {
-    width: 25%;
+    width: 50px;
   }
 }
 
