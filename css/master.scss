@@ -67,21 +67,21 @@ body {
         padding-left: 0.5em;
       }
     }
-    p{
-      font-size: 0.75rem;
-      padding-left: 1.2em;
-      letter-spacing: 0.31rem;
-      @media (max-width: 768px) {
-        padding-left: 1em;
-        letter-spacing: 0.09rem;
-      }
-    }
-    @media (max-width: 768px) {
-      // width: 100%;
-      display: flex;
-      justify-content: center;
-    }
-  }
+  //   p{
+  //     font-size: 0.75rem;
+  //     padding-left: 1.2em;
+  //     letter-spacing: 0.31rem;
+  //     @media (max-width: 768px) {
+  //       padding-left: 1em;
+  //       letter-spacing: 0.09rem;
+  //     }
+  //   }
+  //   @media (max-width: 768px) {
+  //     // width: 100%;
+  //     display: flex;
+  //     justify-content: center;
+  //   }
+  // }
 }
 /*** Breadcrumbs 麵包屑 ***/
 .wrap {
